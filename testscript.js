@@ -10,7 +10,7 @@ fs.rename('./.gitignore', './.gitignore.original', function(err) {
 		    	console.log('ERROR: ' + err)
 		    } else {
 
-		    	shelljs.exec('git add dist && git commit -am \'Auto builder\' && git subtree push --prefix dist origin testy && git rm -r --cached dist');
+		    	shelljs.exec('git add dist && git commit -am \'Auto builder\' && git subtree push --prefix dist origin testy && git rm -r --cached dist && git add .');
 		    	// shelljs.exec('git add dist && git commit -am \'Autoo\' && git push origin \'git subtree split --prefix dist \':testy --force');
 
 		    	fs.rename('./.gitignore', './.gitignore.publish', function(err) {
