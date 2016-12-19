@@ -10,21 +10,15 @@
   font-style: normal;
 }
 
-html, body {
-	height: 100%;
-}
-
-html {
-	overflow: hidden;
-}
-
 body {
   min-height: 100%;
   background-color: whitesmoke;
   position: relative;
-  color: #333;
+  color: #555;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 p {
@@ -37,7 +31,13 @@ h2 {
 
 a {
 	text-decoration: none;
-	color: #333;
+	color: #00c8b4;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #ff5a6e;
 }
 
 ul {
@@ -49,14 +49,136 @@ ul {
 	display: none !important;
 }
 
-section  {	
-	font-weight: 600;
-	padding-top: 20px;
-	padding-bottom: 20px;
+p {
+	margin: 0 0 10px;
 }
+
+.container {
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+	.container {
+	    width: 750px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+    	width: 970px;
+	}
+}
+
+.font-name {
+	opacity: 0.3;
+	display: inline-block;
+	float: right;
+}
+
+.greeting {
+	font-size: 5em;
+	font-weight: 700;
+	display: inline-block;
+	margin: 0;
+}
+
+.sign-off {
+	font-size: 3em !important;
+	margin-bottom: 0;
+}
+
+.blurb {
+}
+
+.caveat {
+	font-family: 'Caveat', sans-serif;
+}
+
+.romanesco {
+	font-family: 'Romanesco', sans-serif;
+}
+
+.vibur {
+	font-family: 'Vibur', sans-serif;
+}
+
+.loved {
+	font-family: 'Loved by the King', sans-serif;
+}
+
+.francisco {
+	font-family: 'Sue Ellen Francisco', sans-serif;
+}
+
+.yesteryear {
+	font-family: 'Yesteryear', sans-serif;
+	font-weight: 400;
+	font-size: 6em;
+
+	/* +1 (slick) */
+}
+
+.covered {
+	font-family: 'Covered By Your Grace', sans-serif;
+	font-weight: 400;
+	font-size: 6em;
+
+	/* +1 (friendly) */
+}
+
+.shadows {
+	font-family: 'Shadows Into Light', sans-serif;
+}
+
+.amatic {
+	font-family: 'Amatic SC', sans-serif;
+}
+
+.greeting.blue,
+.sign-off.blue {
+	color: #00aced;
+}
+
+.greeting.turq,
+.sign-off.turq {
+	color: #00c8b4;
+}
+
+.greeting.pink,
+.sign-off.pink {
+	color: #ff5a6e;
+}
+
+section  {	
+	font-weight: 400;
+	position: relative;
+	padding: 20px 0;
+}
+
+/*section:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: visible;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	-webkit-transform: skewY(4deg);
+	-moz-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	-o-transform: skewY(4deg);
+	transform: skewY(4deg);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: initial;
+}*/
 
 section h1 {
 	margin-bottom: 20px;
+	font-weight: 600;
 }
 
 section h1, 
@@ -64,17 +186,106 @@ section p {
 	opacity: 0.9;
 }
 
-.section--blue {
+.section--blue:before {
 	background-color: #00aced;
+}
+
+.section--blue {
+	/*background-color: #00aced;*/
 	/*color: #003c6d;*/
-	color: whitesmoke;
+	/*color: whitesmoke;*/
+}
+
+.section--pink:before {
+	background-color: #ff5a6e;
 }
 
 .section--pink {
-	background-color: #ff5a6e;
-	color: whitesmoke;
+	/*background-color: #ff5a6e;*/
+	/*color: whitesmoke;*/
+}
+
+.section--yellow:before {
+	background-color: #ffee52;
 }
 
 .section--yellow {
-	background-color: #ffee52;
+	/*background-color: #ffee52;*/
 }
+
+
+.c-pink{
+	color: #ff5a6e;
+	/*color: rgba(6,194,181,1);*/
+
+}
+
+h1.c-pink {
+	font-weight: bold;
+	margin: 0.2em 0 0.5em 0;
+}
+
+.fixed-background {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: tomato;
+	z-index: 0;
+}
+
+.gradient-bottom {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+	background: rgb(3,48,110); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(6,194,181,1) 0%, rgba(3,48,110,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(6,194,181,1) 0%, rgba(3,48,110,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(6,194,181,1) 0%, rgba(3,48,110,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.gradient-top {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+	background: -moz-linear-gradient(45deg, rgba(255,116,157,0.6) 0%, rgba(255,116,157,0) 35%, rgba(255,116,157,0) 65%, rgba(255,116,157,0.6) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, rgba(255,116,157,0.6) 0%,rgba(255,116,157,0) 35%,rgba(255,116,157,0) 65%,rgba(255,116,157,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, rgba(255,116,157,0.6) 0%,rgba(255,116,157,0) 35%,rgba(255,116,157,0) 65%,rgba(255,116,157,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.warning-strip {
+	background-color: #fea;
+	padding-left: 4em;
+	padding-right: 4em;
+	/*border-top: 1px solid #ed8;*/
+	/*border-bottom: 1px solid #ed8;*/
+	padding: 1em 4em;
+}
+
+.warning-strip p {
+	margin: 0.5em 0;
+	color: #ca2;
+}
+
+.panel {
+  background-color: #fff;
+  padding: 0;
+  -webkit-box-shadow: 0 4px 0 #ccc;
+  -moz-box-shadow: 0 4px 0 #ccc;
+  box-shadow: 0 4px 0 #ccc;
+  position: relative; 
+  border-radius: 0;
+  border: none;
+}
+
+.panel .copy {
+	padding: 2em 4em;
+}
+  
