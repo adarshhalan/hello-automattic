@@ -18,11 +18,18 @@ body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
   padding-top: 20px;
+  
   padding-bottom: 40px;
+  line-height: 1.42857143;
 }
 
 p {
 	font-size: 1.2em;
+	margin: 0 0 10px;
+}
+
+h1 {
+	font-size: 36px;
 }
 
 h2 {
@@ -49,15 +56,12 @@ ul {
 	display: none !important;
 }
 
-p {
-	margin: 0 0 10px;
-}
-
 .container {
 	padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
@@ -79,77 +83,21 @@ p {
 }
 
 .greeting {
+	color: #ff5a6e;
 	font-size: 5em;
 	font-weight: 700;
 	display: inline-block;
 	margin: 0;
+	font-family: 'Covered By Your Grace', sans-serif;
+	font-weight: 400;
 }
 
 .sign-off {
+	color: #ff5a6e;
 	font-size: 3em !important;
 	margin-bottom: 0;
-}
-
-.blurb {
-}
-
-.caveat {
-	font-family: 'Caveat', sans-serif;
-}
-
-.romanesco {
-	font-family: 'Romanesco', sans-serif;
-}
-
-.vibur {
-	font-family: 'Vibur', sans-serif;
-}
-
-.loved {
-	font-family: 'Loved by the King', sans-serif;
-}
-
-.francisco {
-	font-family: 'Sue Ellen Francisco', sans-serif;
-}
-
-.yesteryear {
-	font-family: 'Yesteryear', sans-serif;
-	font-weight: 400;
-	font-size: 6em;
-
-	/* +1 (slick) */
-}
-
-.covered {
 	font-family: 'Covered By Your Grace', sans-serif;
 	font-weight: 400;
-	font-size: 6em;
-
-	/* +1 (friendly) */
-}
-
-.shadows {
-	font-family: 'Shadows Into Light', sans-serif;
-}
-
-.amatic {
-	font-family: 'Amatic SC', sans-serif;
-}
-
-.greeting.blue,
-.sign-off.blue {
-	color: #00aced;
-}
-
-.greeting.turq,
-.sign-off.turq {
-	color: #00c8b4;
-}
-
-.greeting.pink,
-.sign-off.pink {
-	color: #ff5a6e;
 }
 
 section  {	
@@ -175,6 +123,10 @@ section  {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: initial;
 }*/
+
+h1 {
+	line-height: 1.1;
+}
 
 section h1 {
 	margin-bottom: 20px;
@@ -274,7 +226,7 @@ h1.c-pink {
 	color: #ca2;
 }
 
-.panel {
+.paper {
   background-color: #fff;
   padding: 0;
   -webkit-box-shadow: 0 4px 0 #ccc;
@@ -285,7 +237,7 @@ h1.c-pink {
   border: none;
 }
 
-.panel .copy {
+.paper .copy {
 	padding: 2em 4em;
 }
   
