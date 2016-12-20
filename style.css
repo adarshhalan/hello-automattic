@@ -61,6 +61,7 @@ ul {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 4px;
     font-size: 14px;
 }
 
@@ -224,6 +225,29 @@ h1.c-pink {
 .warning-strip p {
 	margin: 0.5em 0;
 	color: #ca2;
+}
+
+.resource-strip {
+	background-color: #edf3fe;
+	padding-left: 4em;
+	padding-right: 4em;
+	/*border-top: 1px solid #ed8;*/
+	/*border-bottom: 1px solid #ed8;*/
+	padding: 1em 4em;
+}
+
+.resource-strip p {
+	margin: 0.5em 0;
+	color: #666;
+}
+
+.resource-strip a {
+	color: #7676a6;
+	text-decoration: dotted;
+}
+
+.resource-strip a:hover {
+	color: #9696c6;
 }
 
 .paper {
